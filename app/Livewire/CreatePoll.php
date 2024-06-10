@@ -57,6 +57,7 @@ class CreatePoll extends Component
                     ->all()
         );
 
-        return $this->reset(['title', 'options']);
+        $this->reset(['title', 'options']);
+        $this->dispatch('pollCreated')->to(Polls::class);
     }
 }
