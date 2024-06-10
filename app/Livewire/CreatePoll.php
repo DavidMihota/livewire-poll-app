@@ -51,7 +51,7 @@ class CreatePoll extends Component
 
         Poll::create([
             'title' => $this->title
-        ])->option()->createMany(
+        ])->options()->createMany(
             collect($this->options)
                 ->map(fn($option) => ['name' => $option])
                     ->all()
