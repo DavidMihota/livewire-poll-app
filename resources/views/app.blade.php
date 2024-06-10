@@ -23,15 +23,20 @@
     .error {
       @apply text-red-500 text-sm
     }
+
+    .card {
+        @apply shadow-lg py-3 px-3
+    }
   </style>
   {{-- blade-formatter-enable --}}
 
   @livewireStyles
 </head>
 
-<body class="container mx-auto mt-10 mb-10 max-w-lg">
+<body class="container mx-auto mt-10 mb-10 max-w-xl bg-gradient-to-r from-cyan-100 to-blue-100">
+
     @livewireScripts
-    <div>
+    <div class="bg-white px-3 py-4 rounded-md shadow-lg">
         <h2 class="text-2xl mb-4 mt-3">Create Poll</h2>
         @livewire('create-poll')
     </div>

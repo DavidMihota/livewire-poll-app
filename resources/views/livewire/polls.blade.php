@@ -1,7 +1,7 @@
 <div>
     @forelse ($polls as $poll)
-        <div class="mb-4">
-            <h3 class="text-xl mb-4">
+        <div class="mb-4 card bg-white rounded-md">
+            <h3 class="text-xl mb-4 border-b-2 border-neutral-100">
                 {{ $poll->title }}
             </h3>
 
